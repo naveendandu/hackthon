@@ -148,11 +148,9 @@
               callback(request.responseText, request.status);
             }
           };
-
           request.open('GET', url, true);
           request.send(null);
        }
-
        function parseXml(str) {
           if (window.ActiveXObject) {
             var doc = new ActiveXObject('Microsoft.XMLDOM');
